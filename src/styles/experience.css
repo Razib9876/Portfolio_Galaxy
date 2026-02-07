@@ -1,0 +1,86 @@
+/* Section headings */
+.section-sub-text {
+  color: #aaa6c3;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-head-text {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Timeline wrapper */
+.experience-container {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Icon */
+/* .experience-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+} */
+
+/* Icon */
+.experience-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: white;
+
+  border-radius: 50%; /* Make it round */
+  overflow: hidden; /* Cut extra part */
+}
+
+.experience-icon {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+/* Card text */
+.experience-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.experience-company {
+  color: #aaa6c3;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Bullet points */
+.experience-points {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-point {
+  color: #e6e6e6;
+  font-size: 14px;
+  padding-left: 4px;
+  letter-spacing: 0.05em;
+}

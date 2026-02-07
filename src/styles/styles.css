@@ -1,0 +1,120 @@
+/* Padding helpers */
+.padding-x-sm {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.padding-x {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.padding-y-sm {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.padding-y {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.padding-sm {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.padding {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Hero Head Text */
+.hero-head-text {
+  font-weight: 900;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  line-height: 1.225;
+}
+
+@media (min-width: 640px) {
+  .hero-head-text {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-head-text {
+    font-size: 80px;
+    line-height: 98px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-head-text {
+    font-size: 50px;
+  }
+}
+
+/* Hero Sub Text */
+.hero-sub-text {
+  color: #dfd9ff;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .hero-sub-text {
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-sub-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-sub-text {
+    font-size: 20px;
+  }
+}
+.hero-sub-text-default {
+  font-size: 16px;
+}
+
+/* Section Head Text */
+.section-head-text {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+@media (max-width: 640px) {
+  .section-head-text {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .section-head-text {
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .section-head-text {
+    font-size: 60px;
+  }
+}
+
+/* Section Sub Text */
+.section-sub-text {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #aaa6c3;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  .section-sub-text {
+    font-size: 18px;
+  }
+}

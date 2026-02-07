@@ -1,0 +1,44 @@
+/* Tech section layout */
+.tech-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Individual tech item */
+.tech-item {
+  width: 112px;
+  height: 112px;
+}
+
+.tech-marquee {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #111; /* optional background */
+  padding: 20px 0;
+}
+
+.tech-marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee 20s linear infinite; /* control speed here */
+}
+
+.tech-marquee-item {
+  margin-right: 30px; /* space between balls */
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+/* Infinite scrolling effect */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

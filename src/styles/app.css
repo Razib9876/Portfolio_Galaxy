@@ -1,0 +1,33 @@
+.app-root {
+  position: relative;
+  z-index: 0;
+  background-color: #050816;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 80px; /* Space between sections */
+}
+
+/* Hero background wrapper */
+.hero-wrapper {
+  background-image: var(--hero-pattern);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* IMPORTANT:
+  --hero-pattern should already be defined globally
+  (same way Tailwind's bg-hero-pattern was).
+  Example (global css): */
+
+:root {
+  --hero-pattern: url("/src/assets/herobg.png");
+}
+
+/* Contact + stars wrapper */
+.contact-wrapper {
+  position: relative;
+  z-index: 0;
+}
