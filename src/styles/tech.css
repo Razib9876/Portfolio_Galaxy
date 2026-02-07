@@ -42,3 +42,10 @@
     transform: translateX(-50%);
   }
 }
+
+/* Hide 3D Ball on Mobile */
+@media (max-width: 768px) {
+  .ball-canvas-wrapper {
+    display: none !important;
+  }
+}
