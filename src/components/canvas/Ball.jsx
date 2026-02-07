@@ -97,31 +97,31 @@ const BallCanvas = ({ icon }) => {
   }, [handleMouseMove]);
 
   /* Disable on Mobile (Performance Fix) */
-  if (isMobile) {
-    return null;
-  }
+  // if (isMobile) {
+  //   return null;
+  // }
 
   return (
-    <div className="ball-canvas-wrapper">
-      <Canvas
-        frameloop="always"
-        dpr={[1, 1.5]} // Mobile-friendly
-        gl={{ preserveDrawingBuffer: true }}
-        camera={{
-          position: [0, 0, 8],
-          fov: 50,
-          near: 0.1,
-          far: 200,
-        }}
-        shadows
-      >
-        <Suspense fallback={<CanvasLoader />}>
-          <Ball imgUrl={icon} mouse={mouse} />
-        </Suspense>
+    // <div className="ball-canvas-wrapper">
+    <Canvas
+      frameloop="always"
+      dpr={[1, 1.5]} // Mobile-friendly
+      gl={{ preserveDrawingBuffer: true }}
+      camera={{
+        position: [0, 0, 8],
+        fov: 50,
+        near: 0.1,
+        far: 200,
+      }}
+      shadows
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <Ball imgUrl={icon} mouse={mouse} />
+      </Suspense>
 
-        <Preload all />
-      </Canvas>
-    </div>
+      <Preload all />
+    </Canvas>
+    // </div>
   );
 };
 
