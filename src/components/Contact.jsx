@@ -27,7 +27,7 @@ const Contact = () => {
 
     try {
       const response = await fetch(
-        `https://portfolio-galaxy-server-3.onrender.com/api/contact`,
+        `${import.meta.env.VITE_API_URL}/api/contact`,
         {
           method: "POST",
           headers: {
