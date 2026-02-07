@@ -1,22 +1,9 @@
-/* Section text */
 .section-sub-text {
   color: #aaa6c3;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* .about-global {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-/* .about-title {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 .section-head-text {
   color: #ffffff;
@@ -34,7 +21,7 @@
 
 /* About paragraph */
 .about-description {
-  margin: 16px auto 0 auto; /* center block */
+  margin: 16px auto 0 auto;
   text-align: center;
   color: #aaa6c3;
   font-size: 17px;

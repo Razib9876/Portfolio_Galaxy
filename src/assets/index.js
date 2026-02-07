@@ -26,7 +26,7 @@ import mern from "./company/mern.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import ProfileImg from "./ProfileImg.png";
+import profileImage from "./profileImage.jpeg";
 
 export {
   logo,
@@ -54,5 +54,5 @@ export {
   carrent,
   jobit,
   tripguide,
-  ProfileImg,
+  profileImage,
 };

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  gap: 80px; /* Space between sections */
+  gap: 80px;
 }
 
 /* Hero background wrapper */
@@ -16,11 +16,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* IMPORTANT:
-  --hero-pattern should already be defined globally
-  (same way Tailwind's bg-hero-pattern was).
-  Example (global css): */
 
 :root {
   --hero-pattern: url("/src/assets/herobg.png");
