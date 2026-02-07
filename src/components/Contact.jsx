@@ -36,7 +36,6 @@ const Contact = () => {
           body: JSON.stringify(form),
         },
       );
-      console.log("API URL:", import.meta.env.VITE_API_URL);
 
       if (!response.ok) {
         throw new Error("Failed to send message");
