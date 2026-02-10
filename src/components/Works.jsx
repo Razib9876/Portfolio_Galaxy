@@ -17,43 +17,32 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <div>
-      <Tilt
-        tiltMaxAngleX={45}
-        tiltMaxAngleY={45}
-        scale={1}
-        transitionSpeed={450}
-        className="project-card"
-      >
-        <div className="project-image-wrapper">
-          <img src={image} alt="project_image" className="project-image" />
+    <div className="project-card">
+      <div className="project-image-wrapper">
+        <img src={image} alt="project_image" className="project-image" />
 
-          <div className="project-overlay">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="github-icon-wrapper"
-            >
-              <img src={github} alt="source code" className="github-icon" />
-            </div>
+        <div className="project-overlay">
+          <div
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="github-icon-wrapper"
+          >
+            <img src={github} alt="source code" className="github-icon" />
           </div>
         </div>
+      </div>
 
-        <div className="project-content">
-          <h3 className="project-title">{name}</h3>
-          <p className="project-description">{description}</p>
-        </div>
+      <div className="project-content">
+        <h3 className="project-title">{name}</h3>
+        <p className="project-description">{description}</p>
+      </div>
 
-        <div className="project-tags">
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`project-tag ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
+      <div className="project-tags">
+        {tags.map((tag) => (
+          <p key={`${name}-${tag.name}`} className={`project-tag ${tag.color}`}>
+            #{tag.name}
+          </p>
+        ))}
+      </div>
     </div>
   );
 };
